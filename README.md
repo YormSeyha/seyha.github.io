@@ -1,1 +1,0 @@
-# seyha.github.io
