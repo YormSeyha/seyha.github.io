@@ -3,15 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seyha.pic</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>BY.Seyha.com</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        font-family: sans-serif;
+        background-color: #f1ff54;
+      }
+      main {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h2 {
+        font-size: 2rem;
+        margin: 20px;
+        color: rgb(53, 25, 42);
+      }
+      button {
+        position: absolute;
+        width: 120px;
+        padding: 0.5rem 2rem;
+        font-size: 30px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px pink;
+      }
+      button:nth-child(1) {
+        border: 1px solid rgb(255, 88, 124);
+        left: 100px;
+        background-color: rgb(36, 255, 39);
+        color: rgb(253, 0, 0);
+      }
+      button:nth-child(2) {
+        right: 100px;
+        background-color: #ff2256;
+        color: white;
+        transition: all 0.3 ease-out;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="poster"><img src="pic/pic1.jpg" alt="" /></div>
-      <div class="poster"><img src="pic/pic2.jpg" alt="" /></div>
-      <div class="poster"><img src="pic/pi3.jpg" alt="" /></div>
-      <div class="poster"><img src="pic/pic4.jpg" alt="" /></div>
-    </div>
+    <main>
+      <h1>
+        ...............❤️............... <br />
+        Uy Tv lg ot Roth ?🙂
+      </h1>
+      <div class="btn-container">
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+      </div>
+    </main>
+    <script>
+      const yesButton = document.querySelector(".yes");
+      const noButton = document.querySelector(".no");
+      yesButton.addEventListener("click", () => {
+        yesButton.innerHTML = "Send locat Mk🤣​";
+      });
+
+      noButton.addEventListener("mouseover", function () {
+        function getRandomNumber() {
+          return Math.floor(Math.random() * 301);
+        }
+
+        noButton.style.left = getRandomNumber() + "px";
+        noButton.style.top = getRandomNumber() + "px";
+      });
+    </script>
   </body>
 </html>
